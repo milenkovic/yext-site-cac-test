@@ -3,6 +3,7 @@
     "$schema": "https://schema.yext.com/config/pages/yextsite-config/v1",
     "siteName": "${{siteName}}",
     "repoConfig": "${{repoId}}",
+    "domainConfig": "${{domainName}}",
     "siteSettings": {
       "autoDeploy": true,
       "autoStage": true,
@@ -16,8 +17,13 @@
     "branches": [
       {
         "name": "main",
-        "isProductionBranch": true
+        "isProductionBranch": true,
+        "envVars": [
+          {
+            "key": "YEXT_PUBLIC_ENTITY_ID",
+            "value": "${{placeId}}"
+          }
+        ],
       }
     ]
   }
-  
