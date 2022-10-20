@@ -23,7 +23,7 @@
             "key": "YEXT_PUBLIC_ENTITY_ID",
             "value": "${{placeId}}"
           }
-        ],
+        ]
       }
     ]
   }
